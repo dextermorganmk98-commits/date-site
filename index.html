@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+    <!-- Страница приветствия -->
+    <section class="page active" id="welcomePage">
+
+        <h1>❤️ Привет ❤️</h1>
+
+        <p class="typing">
+            Я подготовил для тебя небольшой сюрприз...
+        </p>
+
+        <button id="startBtn">
+            ✨ Начать
+        </button>
+
+    </section>
+
+    <!-- Вход -->
+
+    <section class="page" id="loginPage">
+
+        <h1>🔐 Код доступа</h1>
+
+        <p>
+
+            Чтобы открыть этот сайт,
+            введи секретный код.
+
+        </p>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Имя">
+
+        <input
+        type="text"
+        id="surname"
+        placeholder="Фамилия">
+
+        <input
+        type="text"
+        id="father"
+        placeholder="Отчество">
+
+        <button id="loginBtn">
+            Войти ❤️
+        </button>
+
+        <p id="error"></p>
+
+    </section>
+
+    <!-- Главный вопрос -->
+
+    <section class="page" id="questionPage">
+
+        <h1>
+
+            😊 Один вопрос...
+
+        </h1>
+
+        <h2>
+
+            Пойдёшь со мной гулять?
+
+        </h2>
+
+        <div class="buttons">
+
+            <button id="yesBtn">
+
+                ❤️ Да
+
+            </button>
+
+            <button id="noBtn">
+
+                ❌ Нет
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Выбор места -->
+
+    <section class="page" id="placePage">
+
+        <h1>
+
+            📍 Куда хочешь пойти?
+
+        </h1>
+
+        <div class="cards">
+
+            <div class="card" data-place="Парк">🌳 Парк</div>
+
+            <div class="card" data-place="Кафе">☕ Кафе</div>
+
+            <div class="card" data-place="Кино">🎬 Кино</div>
+
+            <div class="card" data-place="Magic City">🎡 Magic City</div>
+
+            <div class="card" data-place="Поесть">🍕 Поесть</div>
+
+            <div class="card" data-place="Другое">✨ Другое</div>
+
+        </div>
+
+    </section>
+
+    <!-- Дата -->
+
+    <section class="page" id="datePage">
+
+        <h1>
+
+            📅 Выбери день
+
+        </h1>
+
+        <input type="date" id="date">
+
+        <button id="dateBtn">
+
+            Продолжить
+
+        </button>
+
+    </section>
+
+    <!-- Время -->
+
+    <section class="page" id="timePage">
+
+        <h1>
+
+            🕒 Выбери время
+
+        </h1>
+
+        <input type="time" id="time">
+
+        <button id="timeBtn">
+
+            Продолжить ❤️
+
+        </button>
+
+    </section>
+
+    <!-- Финал -->
+
+    <section class="page" id="finishPage">
+
+        <h1>
+
+            ❤️ Спасибо ❤️
+
+        </h1>
+
+        <div id="finalText">
+
+        </div>
+
+        <button id="sendBtn">
+
+            💌 Отправить ответ Бахтияру
+
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

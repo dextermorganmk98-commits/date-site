@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ff7eb3,#ffb6d9,#ffd6eb);
+}
+
+.container{
+    width:90%;
+    max-width:600px;
+}
+
+.page{
+    display:none;
+    background:#fff;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    animation:show .5s;
+}
+
+.page.active{
+    display:block;
+}
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+h1{
+    color:#ff2d75;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#444;
+    margin:20px 0;
+}
+
+p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border-radius:12px;
+    border:2px solid #ffb3d1;
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#ff2d75;
+}
+
+button{
+    background:#ff2d75;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:14px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.25s;
+    margin-top:15px;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
+}
+
+.card{
+    background:#ffe5f1;
+    border:2px solid transparent;
+    border-radius:18px;
+    padding:25px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+}
+
+.card:hover{
+    background:#ffb6d9;
+    transform:scale(1.05);
+}
+
+.card.selected{
+    border-color:#ff2d75;
+    background:#ffb6d9;
+}
+
+#error{
+    color:red;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+#hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+.heart{
+    position:absolute;
+    animation:fall 6s linear forwards;
+    font-size:20px;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-50px);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
