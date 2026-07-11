@@ -26,9 +26,9 @@ document.getElementById("loginBtn").addEventListener("click", () => {
     const father = document.getElementById("father").value.trim().toLowerCase();
 
     if(
-        name === "бахтияр" &&
-        surname === "туткабаев" &&
-        father === "анатольевич"
+        name === "Aygerim" &&
+        surname === "Smailova" &&
+        father === "Rashid qizi"
     ){
         document.getElementById("error").innerHTML = "";
         showPage("questionPage");
